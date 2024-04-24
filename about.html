@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="sidebar.css">
+    <style>
+
+    .sidebar{
+    top:50px;
+    bottom:0;
+    left: 0;
+    width: 70px;
+    background-color: transparent;
+    position: fixed;
+   }
+    .side-barimg{
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 80px;
+    cursor: pointer;
+    margin-bottom:0;
+     }
+    .side-barimg:hover{
+    color:lightgray;
+    opacity: 0.5;
+     }
+     .textedit{
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: "Teko", sans-serif; 
+    font-weight: 400;
+    cursor: pointer;
+    margin-top:0;
+     }
+     .container{
+      width: 100%;
+      padding: 35px 10% ;
+     }
+     main.row{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap:20px;
+     }
+     .col header.title{
+      font-family: helvetica;
+      color: black;
+      padding: 0px 30px;
+     }
+     .col .contents{
+      padding: 0px 30px;
+      border-left: 2px solid #464545;
+     }
+     .col .contents .box{
+      position:relative;
+      padding:20px;
+      border:1px solid #eaeaea;
+      background-color: #ffffff;
+      cursor: pointer;
+      transition: all 0.4s;
+      margin-bottom: 20px;
+     }
+     .col .contents .box:hover{
+      box-shadow: 0px 3px 12px 0px rgb(81, 81, 81);
+      border: 1px solid transparent;
+
+     }
+     .col .contents .box::before{
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      right: calc(100% + 22px);
+      top: 0;
+      background-color: rgb(1, 1, 72);
+      border: 2px soild white;
+     }
+     .box h4{
+      position:realtive;
+      color: black;
+     }
+     .box h3{
+      font-size: 19px;
+      padding: 10px 0px 6px;
+      font-family: helvectica;
+      color: #444;
+     }
+     .box p{
+      line-height: 1.2;
+      color: #666;
+      font-size: 17px;
+     }
+     @media screen and (max-width:600px){
+      .col.contents{
+        padding-left: 20px;
+        width: 100px;
+      }
+      main.row{
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-column-gap:20px;
+     }
+     .sidebar{
+    top:auto;
+    bottom:0;
+    left: 0;
+    width: 50px;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     }
+     .side-barimg{
+     width: 30px;
+     height: 30px;
+     padding-left: 50px;
+     margin-top: 80px;
+     cursor: pointer;
+     margin-bottom:0;
+     }
+    }
+     
+
+     
+     
+    </style>
+
+    </head>
+    <body style="
+     background-image: url(images/bluephoto.jpg);
+     background-size: cover;
+     margin: 0;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-position: relative;
+    ">
+        <div >
+            <div class="container">
+                <main class="row">
+                 <section class="col">
+                  <header class="title">
+                    <h2> EDUCATION </h2>
+                  </header>
+
+                  <div class="contents">
+                    <div class="box">
+                        <h4>
+                            2008-2021
+                        </h4>
+                        <h3> 
+                         Secondary Education
+                        </h3>
+                        <p>
+                          SLS Scholars high school</p>
+                         <p> GPA: 10</p>
+
+                        </p>
+                    </div>
+                    <div class="box">
+                      <h4>
+                          2021-2023
+                      </h4>
+                      <h3> 
+                        Higher Secondary Education
+                      </h3>
+                      <p>
+                        Narayana junior college</p>
+                        <p>percentage: 98.2%</p>
+                          
+                      </p>
+                      </div>
+                      <div class="box">
+                        <h4>
+                            2023-present
+                        </h4>
+                        <h3> 
+                          Graduation
+                        </h3>
+                        <p>
+                          SRM institute of science and technology</p>
+                          <p>Computer science engineering </p>
+                         <p>Specilisation-core  
+                        </p>
+                  </div>
+                 </section>
+
+                 <section class="col">
+                  <header class="title">
+                    <h2> SKILLS </h2>
+                  </header>
+                  <div class="contents">
+                    <div class="box"> 
+                        <p>
+                          c,c++,python,html,css 
+
+                        </p>
+                    </div>
+                   
+                 </section>
+                 <section class="col">
+                  <header class="title">
+                    <h2> INTRESTS </h2>
+                  </header>
+                  <div class="contents">
+                    <div class="box"> 
+                        <p>
+                          Photography,Dancing,Sketch
+
+                        </p>
+                    </div>
+                   
+                 </section>
+
+                </main>
+            
+                
+
+                
+              
+           </div>
+            <div class="sidebar">
+                <div class="sidebar-link">
+                  <a href="start.html">
+                  <img class="side-barimg" src="images/home-icon-silhouette.png">
+                </a>
+                </div>
+                <div class="sidebar-link">
+                  <a href="gallerypage.html" >
+                  <img  class="side-barimg" src="images/photo-camera.png">
+                  </a>
+                </div>
+                <div class="sidebar-link">
+                  <a href="about.html">
+                  <img  class="side-barimg" src="images/user.png">
+                </a>
+                </div>
+                <div class="sidebar-link">
+                  <a href="contactpage.html">
+                  <img  class="side-barimg" src="images/mail.png">
+                  </a>
+                </div>
+
+  
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+    </body>
+</html>

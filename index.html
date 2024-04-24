@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <title>
+    vennelas website
+  </title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="sidebar.css">
+  </head>
+      <style>
+        body{
+      margin: 0;
+      background-image: url(images/bluephoto.jpg );
+      background-size: 1490px 800px;
+      background-repeat: no-repeat;
+      background-position: relative;
+    
+      }
+      .lists{
+      display: flex;
+      list-style-type: none;
+      margin-left: 50px;
+     }
+     .imagedit{
+      height: 30px;
+      width: 30px;
+      margin-right: 20px;
+    
+    }
+    .frontedit{
+     width: auto;
+     height: 100px;
+     font-size: 60px;
+     font-family: "Oswald", sans-serif;
+     font-weight: 500;
+     color: rgb(2, 2, 42);
+     border: none;
+     margin-bottom: 30px;
+     margin-left: 300px;
+     margin-top: 160px;
+     background-color: transparent;
+  
+
+   }
+   .middleedit{
+    width: auto;
+    height: 100px;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    background-color: transparent;
+    
+   }
+   .socbuttons{
+    border: none;  
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: opacity 0.15s; 
+    background-color: transparent;
+   }
+   .socbuttons:hover{
+    opacity:0.5;
+    background-color: transparent;
+   }
+  .sidebar{
+    top:50px;
+    bottom:0;
+    left: 0;
+    width: 70px;
+    background-color: transparent;
+    position: fixed;
+  }
+  .side-barimg{
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 80px;
+    cursor: pointer;
+    margin-bottom:0;
+  }
+  .side-barimg:hover{
+    color:lightgray;
+    opacity: 0.5;
+  }
+  .editimg{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 1000px;
+    margin-top: -300px;
+  }
+  @media screen and (max-width:600px){
+    body{
+      background-image: url(images/bluephoto.jpg);
+      background-size:600px 1000px;
+    }
+    .frontedit{
+    width: 300px;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 60px;
+    margin-bottom: -20px;
+  
+
+  }
+     body .middleedit{
+      font-size: 20px;
+      margin-top:0px;
+      width: 250px;
+      margin-left:65px;
+    }
+    .editimg{
+    width:130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-left: 110px;
+    margin-top: 20px;
+  }
+  .side-barimg{
+    width: 30px;
+    height:30px;
+  }
+  .socbuttons{
+    margin-left: 10px;  
+    height: 30px;
+    width: 30px;
+    
+   }
+  }
+  
+
+   </style>
+  <body >
+    <div  class="container">
+     <div >
+       <ul class="lists">
+        <li>
+          <a href="https://www.instagram.com/vennela_rv9/" target="\blank">
+          <button class="socbuttons">
+          <img class="imagedit"  src="images/instagram.png">
+         </button>
+         </a>
+         </li>
+         <li>
+          <a href="https://www.linkedin.com/in/vennela-reddy-029b012b2/" target="\blank">
+         <button class="socbuttons">
+          <img   class="imagedit" src="images/linkedin.png" >  
+          </button>
+          </a>
+          </li>
+          <li>
+           <a href="https://twitter.com/vennela_rv9" target="\blank">
+           <button class="socbuttons">
+            <img  class="imagedit" src="images/twitter.png">
+           </button>
+           </a>
+           </li>
+           <li>
+            <a href="https://github.com/vennela9927" target="\blank">
+            <button class="socbuttons">
+            <img class="imagedit"  src="images/github.png">
+           </button>
+           </a>
+           </li>
+            </ul>
+           </div>
+        </div>
+        <div class="sidebar">
+          <div >
+            <a  href="start.html">
+            <img class="side-barimg" src="images/home-icon-silhouette.png">
+          </a>
+          </div>
+          <div class="sidebar-link">
+            <a href="gallerypage.html">
+            <img  href="gallerypage.html"  class="side-barimg" src="images/photo-camera.png">
+            </a>
+          </div>
+          <div class="sidebar-link">
+            <a >
+            <img  class="side-barimg" src="images/user.png">
+          </a>
+          </div>
+          <div class="sidebar-link">
+            <a href="about.html">
+
+            <img  class="side-barimg" src="images/mail.png">
+           </a>
+          </div>
+
+        </div>
+        <div>
+        <button class="frontedit">
+          I'M VENNELA REDDY
+        </button>
+      </div>
+      <div>
+       <button class="middleedit">
+       PHOTOGRAPHER AND WEBDEV
+       </button>
+       <img class="editimg" src="images/newimg2.jpg">
+      </div>
+  </body>
+</html>

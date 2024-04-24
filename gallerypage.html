@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="sidebar.css">
+    <style>
+
+     .sidebar{
+    top:50px;
+    bottom:0;
+    left: 0;
+    width: 70px;
+    background-color: transparent;
+    position: fixed;
+     }
+    .side-barimg{
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 80px;
+    cursor: pointer;
+    margin-bottom:0;
+     }
+    .side-barimg:hover{
+    color:lightgray;
+    opacity: 0.5;
+     }
+     .imggallery{
+        padding-left: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+     }
+     .imgedit{
+        width:400;
+        height: 400px;
+        border:1px solid rgb(42, 41, 41);
+        border-radius:13px;
+        box-shadow: 4px 7px 7px 0px #00000042;
+        cursor: pointer;
+        margin: 10px;
+        transition: 400ms;
+
+     }
+     .imgedit:hover{
+        filter: 0;
+        transform: scale(1.03);
+     }
+     .cover{
+      background-image: url(images/bluephoto.jpg);
+     margin: 0;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: relative;
+     background-size: 1490px 800px;
+     }
+     @media screen and (max-width:600px){
+      .imgedit{
+        width:150;
+        height: 150px;
+        border:0.45px solid rgb(42, 41, 41);
+        border-radius:4.25px;
+        box-shadow: 1.3px 1.55px 1.55px 0px #00000042;
+        margin: 3.5px;
+        transition: 400ms;
+      }
+      .imgedit:hover{
+        filter: 0;
+        transform: scale(1.03);
+     }
+     .side-barimg{
+    width: 30px;
+    height:30px;
+     }
+     .cover{
+      background-size: 100vw 100vh;
+     }
+     
+    }
+    </style>
+
+    </head>
+    <body class="cover">
+        <div >           
+                <div class="imggallery">
+                  <img  class="imgedit "src="myphotos/img1.JPG">
+                  <img  class="imgedit "src="myphotos/img2.JPG">
+                  <img  class="imgedit "src="myphotos/img3.JPG">
+                  <img  class="imgedit "src="myphotos/img4.JPG">
+                  <img  class="imgedit "src="myphotos/img5.JPG">
+                  <img  class="imgedit "src="myphotos/img6.JPG">
+                  <img  class="imgedit "src="myphotos/img7.JPG">
+                  <img  class="imgedit "src="myphotos/img8.JPG">
+                  <img  class="imgedit "src="myphotos/img9.JPG">
+                  <img  class="imgedit "src="myphotos/img10.JPG">
+                   <img  class="imgedit "src="myphotos/img11.JPG">
+                   <img  class="imgedit "src="myphotos/img12.JPG">
+                   <img  class="imgedit "src="myphotos/img13.JPG">
+                   <img  class="imgedit "src="myphotos/img14.JPG">
+                   <img  class="imgedit "src="myphotos/img15.JPG">
+                   <img  class="imgedit "src="myphotos/img16.JPG">
+                   <img  class="imgedit "src="myphotos/img17.JPG">
+                   <img  class="imgedit "src="myphotos/img18.JPG">
+                   <img  class="imgedit "src="myphotos/img19.JPG">
+                   <img  class="imgedit "src="myphotos/img20.JPG">
+                   <img  class="imgedit "src="myphotos/img21.JPG">
+                   <img  class="imgedit "src="myphotos/img22.JPG">
+                   <img  class="imgedit "src="myphotos/img23.JPG">
+                   <img  class="imgedit "src="myphotos/img24.JPG">
+                   <img  class="imgedit "src="myphotos/img25.JPG">
+                   <img  class="imgedit "src="myphotos/img26.JPG">
+                   <img  class="imgedit "src="myphotos/img27.JPG">
+                   <img  class="imgedit "src="myphotos/img28.JPG">
+                   <img  class="imgedit "src="myphotos/img29.JPG">
+                   <img  class="imgedit "src="myphotos/img30.JPG">
+
+                    
+
+                </div>
+            <div class="sidebar">
+                <div class="sidebar-link">
+                  <a href="start.html">
+                    <img class="side-barimg" src="images/home-icon-silhouette.png">
+                  </a>
+                  </div>
+                  <div class="sidebar-link">
+                    <a href="gallerypage.html" >
+                    <img  class="side-barimg" src="images/photo-camera.png">
+                    </a>
+                  </div>
+                  <div class="sidebar-link">
+                    <a href="about.html">
+                    <img  class="side-barimg" src="images/user.png">
+                  </a>
+                  </div>
+                  <div class="sidebar-link">
+                    <a href="contactpage.html">
+                    <img  class="side-barimg" src="images/mail.png">
+                    </a>
+                  </div>
+            </div>
+
+        </div>
+    </body>
+</html>
